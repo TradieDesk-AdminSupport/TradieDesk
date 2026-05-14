@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TradeAdmin - Outsourced Admin Support for Tradies</title>
+    <title>TradieDesk - Professional Outsourced Admin Support for Tradies</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo">TradeAdmin</div>
+            <div class="logo">TradieDesk</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -24,9 +27,9 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Focus on Your Trade, We Handle the Admin</h1>
-                <p>Professional outsourced admin support designed specifically for tradies businesses</p>
-                <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+                <h1>Stop Drowning in Admin Work. Start Growing Your Trade Business.</h1>
+                <p>TradieDesk handles your invoicing, payroll, scheduling, and compliance so you can focus on what you do best—your trade.</p>
+                <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get Started Today</button>
             </div>
         </div>
     </section>
@@ -35,36 +38,49 @@
     <section id="services" class="services">
         <div class="container">
             <h2>Our Services</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 2rem; font-size: 1rem;">
+                Comprehensive admin support tailored for tradies businesses
+            </p>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">📋</div>
-                    <h3>Invoice Management</h3>
-                    <p>Professional invoicing, tracking, and follow-up for faster payments</p>
-                </div>
                 <div class="service-card">
                     <div class="service-icon">📊</div>
                     <h3>Bookkeeping</h3>
-                    <p>Accurate financial records and bookkeeping to keep your business organized</p>
+                    <p>Accurate financial records, expense tracking, and monthly reconciliation to keep your business finances organized and audit-ready.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">📧</div>
-                    <h3>Email & Calendar Management</h3>
-                    <p>Stay organized with professional email and appointment scheduling</p>
+                    <div class="service-icon">💰</div>
+                    <h3>Payroll</h3>
+                    <p>Full payroll processing, tax witholding, superannuation management, and employee payment administration handled professionally.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>Invoicing</h3>
+                    <p>Professional invoice creation, tracking, and follow-up to ensure timely payments and improve your cash flow management.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📅</div>
+                    <h3>Scheduling & Calendar Management</h3>
+                    <p>Coordinated job scheduling, appointment booking, team calendar management, and customer communication to keep operations running smoothly.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📄</div>
+                    <h3>Subcontractor Paperwork</h3>
+                    <p>Management of contractor agreements, documentation, timesheets, invoicing, and compliance records for all your subcontractors.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✅</div>
+                    <h3>Compliance Tracking</h3>
+                    <p>Safety compliance, licensing requirements, certifications, deadlines, and regulatory obligation management to keep your business compliant.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛠️</div>
+                    <h3>General Admin Support</h3>
+                    <p>Data entry, customer database management, quote preparation, job documentation, and all general administrative tasks.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">📞</div>
-                    <h3>Customer Communication</h3>
-                    <p>Handle inquiries and customer follow-ups professionally</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📝</div>
-                    <h3>Job Quoting</h3>
-                    <p>Professional quote preparation and proposal management</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📱</div>
-                    <h3>Administrative Support</h3>
-                    <p>General admin tasks to free up your time for the work you do best</p>
+                    <h3>Phone & Email Management</h3>
+                    <p>Professional call handling, email management, customer inquiries, appointment confirmation, and lead follow-up on your behalf.</p>
                 </div>
             </div>
         </div>
@@ -73,18 +89,19 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2>Why Choose TradeAdmin?</h2>
+            <h2>Why Choose TradieDesk?</h2>
             <div class="about-content">
                 <div class="about-text">
                     <h3>We Understand Your Business</h3>
                     <p>We specialize in supporting tradies businesses. We know the challenges you face:</p>
                     <ul>
-                        <li>✓ Time spent on admin instead of billable work</li>
-                        <li>✓ Difficulty managing multiple jobs and clients</li>
-                        <li>✓ Invoices not being paid on time</li>
-                        <li>✓ Disorganized customer communication</li>
+                        <li>✓ Hours spent on admin instead of billable work</li>
+                        <li>✓ Difficulty managing invoices and getting paid on time</li>
+                        <li>✓ Payroll and compliance complexity</li>
+                        <li>✓ Disorganized scheduling and customer communication</li>
+                        <li>✓ Subcontractor paperwork headaches</li>
                     </ul>
-                    <p><strong>Our solution:</strong> Let us handle your admin so you can focus on what you do best.</p>
+                    <p><strong>Our solution:</strong> Let TradieDesk handle your admin so you can focus on your trade and grow your business.</p>
                 </div>
                 <div class="about-stats">
                     <div class="stat">
@@ -108,6 +125,9 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Get in Touch</h2>
+            <p style="text-align: center; color: white; margin-bottom: 2rem;">
+                Ready to take your admin off your plate? Contact us for a free consultation.
+            </p>
             <form class="contact-form" onsubmit="handleSubmit(event)">
                 <div class="form-group">
                     <label for="name">Name</label>
@@ -134,11 +154,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 TradeAdmin. All rights reserved. | Outsourced Admin Support for Tradies</p>
+            <p>&copy; 2026 TradieDesk. All rights reserved. | Professional Outsourced Admin Support for Tradies</p>
             <div class="footer-links">
-                <a href="#">Privacy Policy</a> | 
-                <a href="#">Terms of Service</a> | 
-                <a href="#">Contact Us</a>
+                <a href="pages/services.html">Services</a> | 
+                <a href="pages/about.html">About</a> | 
+                <a href="pages/contact.html">Contact</a>
             </div>
         </div>
     </footer>
