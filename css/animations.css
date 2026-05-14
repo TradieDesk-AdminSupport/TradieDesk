@@ -1,0 +1,105 @@
+/* Animations and Transitions */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Apply animations */
+.navbar {
+    animation: slideInDown 0.5s ease-out;
+}
+
+.hero-content {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.service-card {
+    animation: slideInUp 0.6s ease-out;
+}
+
+.stat {
+    animation: slideInUp 0.6s ease-out;
+}
+
+.footer {
+    animation: slideInUp 0.5s ease-out;
+}
+
+/* Smooth transitions */
+a,
+button,
+.service-card,
+.stat {
+    transition: all 0.3s ease;
+}
+
+button:active {
+    transform: scale(0.98);
+}
