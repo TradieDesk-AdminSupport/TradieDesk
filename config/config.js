@@ -25,17 +25,12 @@ const CONFIG = {
         {
             icon: '📈',
             title: 'Profitability Reporting',
-            description: 'Detailed profitability analysis, project costing, margin tracking, and financial reports to help you understand your business performance',
+            description: 'Clear job-by-job profitability reports, project costing, margin tracking, and financial insights to help you understand how each project is performing',
         },
         {
             icon: '📄',
             title: 'Subcontractor Paperwork',
-            description: 'Management of contractor agreements, documentation, timesheets, invoicing, and compliance records for all your subcontractors',
-        },
-        {
-            icon: '✅',
-            title: 'Compliance Tracking',
-            description: 'Safety compliance, licensing requirements, certifications, deadlines, and regulatory obligation management to keep your business compliant',
+            description: 'Comprehensive management of your contract documentation, timesheets, invoicing, and compliance requirements requested by head contractors or owners—plus proactive tracking of insurance renewal dates so you stay organised and never miss important deadlines',
         },
         {
             icon: '🛠️',
