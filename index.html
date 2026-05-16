@@ -17,6 +17,7 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
                 <li><a href="pages/about.html">About</a></li>
                 <li><a href="pages/contact.html">Contact</a></li>
             </ul>
@@ -45,7 +46,7 @@
                 <div class="service-card">
                     <div class="service-icon">📊</div>
                     <h3>Bookkeeping</h3>
-                    <p>Accurate financial records, expense tracking, and monthly reconciliation to keep your business finances organized and audit-ready.</p>
+                    <p>Accurate financial records, expense tracking, and monthly reconciliation using Xero to keep your business finances organized and ready.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">💰</div>
@@ -65,12 +66,12 @@
                 <div class="service-card">
                     <div class="service-icon">📄</div>
                     <h3>Subcontractor Paperwork</h3>
-                    <p>Management of contractor agreements, documentation, timesheets, invoicing, and compliance records for all your subcontractors.</p>
+                    <p>Management of contract documentation, timesheets, invoicing, and compliances which are required from your head contractor/owner.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">✅</div>
                     <h3>Compliance Tracking</h3>
-                    <p>Safety compliance, licensing requirements, certifications, deadlines, and regulatory obligation management to keep your business compliant.</p>
+                    <p>Assistance with tracking safety compliance, licensing requirements, certifications, and regulatory deadlines relevant to your business operations.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🛠️</div>
@@ -125,12 +126,80 @@
         </div>
     </section>
 
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Simple, Transparent Pricing</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 3rem; font-size: 1rem;">
+                Unlimited support tailored for tradies and small businesses. Pay based on your transaction volume.
+            </p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Startup</h3>
+                    <div class="price">$250<span>/month</span></div>
+                    <p class="pricing-subtitle">Less than 50 transactions</p>
+                    <ul class="pricing-features">
+                        <li>✓ Unlimited email & phone support</li>
+                        <li>✓ Monthly bookkeeping & reconciliation</li>
+                        <li>✓ Invoice & expense tracking</li>
+                        <li>✓ Financial reports</li>
+                        <li>✓ Xero setup & management</li>
+                    </ul>
+                    <button class="pricing-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Growing</h3>
+                    <div class="price">$500<span>/month</span></div>
+                    <p class="pricing-subtitle">50 - 100 transactions</p>
+                    <ul class="pricing-features">
+                        <li>✓ Unlimited email & phone support</li>
+                        <li>✓ Weekly bookkeeping & reconciliation</li>
+                        <li>✓ Payroll processing included</li>
+                        <li>✓ Subcontractor management</li>
+                        <li>✓ Profitability analysis</li>
+                    </ul>
+                    <button class="pricing-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <h3>Established</h3>
+                    <div class="price">$1,000<span>/month</span></div>
+                    <p class="pricing-subtitle">100 - 200 transactions</p>
+                    <ul class="pricing-features">
+                        <li>✓ Unlimited email & phone support</li>
+                        <li>✓ Bi-weekly bookkeeping & reconciliation</li>
+                        <li>✓ Full payroll & compliance management</li>
+                        <li>✓ Complete subcontractor administration</li>
+                        <li>✓ Advanced profitability reporting</li>
+                    </ul>
+                    <button class="pricing-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">Custom<span>/month</span></div>
+                    <p class="pricing-subtitle">200+ transactions</p>
+                    <ul class="pricing-features">
+                        <li>✓ Unlimited support & priority handling</li>
+                        <li>✓ Customized service package</li>
+                        <li>✓ Dedicated account manager</li>
+                        <li>✓ Advanced analytics & reporting</li>
+                        <li>✓ Tailored compliance solutions</li>
+                    </ul>
+                    <button class="pricing-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <h2>Get in Touch</h2>
+            <p style="text-align: center; color: white; margin-bottom: 0.5rem; font-size: 1.1rem;">
+                We'd love to offer a free review of your systems.
+            </p>
             <p style="text-align: center; color: white; margin-bottom: 2rem;">
-                Ready to take your admin off your plate? Contact us for a free consultation.
+                Contact Us Now and let's discuss how TradieDesk can help your business grow.
             </p>
             <form class="contact-form" onsubmit="handleSubmit(event)">
                 <div class="form-group">
@@ -152,6 +221,9 @@
                 <button type="submit" class="submit-button">Send Message</button>
             </form>
             <div id="form-message" class="form-message"></div>
+            <p style="text-align: center; color: #999; margin-top: 2rem; font-size: 0.9rem;">
+                Or email us directly at <a href="mailto:TradieDesk@outlook.com" style="color: white; text-decoration: underline;">TradieDesk@outlook.com</a>
+            </p>
         </div>
     </section>
 
