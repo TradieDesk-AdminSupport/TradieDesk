@@ -18,11 +18,6 @@ const CONFIG = {
             description: 'Accurate financial records, expense tracking, and monthly reconciliation to keep your business finances organized and audit-ready',
         },
         {
-            icon: '💰',
-            title: 'Payroll',
-            description: 'Full payroll processing, tax witholding, superannuation management, and employee payment administration handled professionally',
-        },
-        {
             icon: '📋',
             title: 'Invoicing',
             description: 'Professional invoice creation, tracking, and follow-up to ensure timely payments and improve your cash flow management',
