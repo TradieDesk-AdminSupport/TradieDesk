@@ -201,22 +201,169 @@ body {
     opacity: 0.9;
 }
 
+/* Pricing Section */
+.pricing {
+    padding: 6rem 0;
+    background: white;
+}
+
+.pricing h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1e3a8a;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.pricing-card {
+    background: #f9fafb;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 2.5rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    position: relative;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: #1e3a8a;
+}
+
+.pricing-card.featured {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    color: white;
+    border: 2px solid #1e3a8a;
+    transform: scale(1.05);
+}
+
+.pricing-card.featured:hover {
+    border-color: #1e40af;
+}
+
+.featured-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fbbf24;
+    color: #1e3a8a;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.pricing-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #1e3a8a;
+}
+
+.pricing-card.featured h3 {
+    color: white;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #1e3a8a;
+}
+
+.pricing-card.featured .price {
+    color: #fbbf24;
+}
+
+.price span {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 400;
+}
+
+.pricing-card.featured .price span {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.pricing-subtitle {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.pricing-card.featured .pricing-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.pricing-features {
+    list-style: none;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.pricing-features li {
+    padding: 0.8rem 0;
+    color: #666;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.pricing-card.featured .pricing-features li {
+    color: rgba(255, 255, 255, 0.95);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.pricing-button {
+    width: 100%;
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 1.5rem;
+}
+
+.pricing-card.featured .pricing-button {
+    background: #fbbf24;
+    color: #1e3a8a;
+}
+
+.pricing-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(30, 58, 138, 0.3);
+}
+
+.pricing-card.featured .pricing-button:hover {
+    box-shadow: 0 10px 20px rgba(251, 191, 36, 0.3);
+}
+
 /* Contact Section */
 .contact {
     padding: 6rem 0;
-    background: #f9fafb;
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    color: white;
 }
 
 .contact h2 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: #1e3a8a;
+    margin-bottom: 1rem;
+    color: white;
 }
 
 .contact-form {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto 2rem;
     background: white;
     padding: 2rem;
     border-radius: 8px;
@@ -293,7 +440,7 @@ body {
 
 /* Footer */
 .footer {
-    background: #1e3a8a;
+    background: #0f2444;
     color: white;
     text-align: center;
     padding: 2rem 0;
@@ -325,7 +472,8 @@ body {
 
     .services h2,
     .about h2,
-    .contact h2 {
+    .contact h2,
+    .pricing h2 {
         font-size: 2rem;
     }
 
@@ -337,13 +485,22 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+
     .hero {
         padding: 4rem 0;
     }
 
     .services,
     .about,
-    .contact {
+    .contact,
+    .pricing {
         padding: 4rem 0;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
     }
 }
