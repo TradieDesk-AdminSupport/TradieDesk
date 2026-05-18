@@ -504,3 +504,28 @@ body {
         grid-template-columns: 1fr;
     }
 }
+.top-bar {
+    background-color: #2347a8;
+    color: white;
+
+    padding: 15px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.right-icons a {
+    color: white;
+    text-decoration: none;
+
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.right-icons a:hover {
+    opacity: 0.8;
+}

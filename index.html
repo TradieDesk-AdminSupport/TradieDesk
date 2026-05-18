@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TradieDesk - Professional Admin Support for Tradies</title>
+    <title>TradieDesk - Professional Bookkeeping & Admin Support for Tradies</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
+    <body>
+
+<div class="top-bar">
+
+    <div class="left-text">
+        Call us on +61 450 294 468
+    </div>
+
+    <div class="right-icons">
+
+        <a href="mailto:TradieDesk@outlook.com">✉</a>
+        <a href="tel:+61450294468">☏</a>
+    </div>
+
+</div>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -29,7 +45,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Focus on Your Trade, We Handle the Admin</h1>
-                <p>Professional admin support designed specifically for tradies businesses. Works done by Certified Practising Accountant (CPA)</p>
+                <p>Professional bookkeeping and admin support designed specifically for tradies businesses. Works done by Certified Practising Accountant (CPA)</p>
                 <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get Started Today</button>
             </div>
         </div>
@@ -46,7 +62,7 @@
                 <div class="service-card">
                     <div class="service-icon">📊</div>
                     <h3>Bookkeeping</h3>
-                    <p>Accurate financial records, expense tracking, and monthly reconciliation using Xero to keep your business finances organized and ready.</p>
+                    <p>Accurate financial records, expense tracking, and monthly reconciliation using Xero to keep your business finances organised and up to date.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">📋</div>
@@ -84,7 +100,7 @@
             <div class="about-content">
                 <div class="about-text">
                     <h3>We Understand Your Business</h3>
-                    <p>We specialize in supporting tradies businesses. We know the challenges you face:</p>
+                    <p>We specialise in supporting tradies businesses. We know the challenges you face:</p>
                     <ul>
                         <li>✓ Hours spent on admin instead of billable work</li>
                         <li>✓ Difficulty managing invoices and getting paid on time</li>
@@ -132,48 +148,49 @@
                         <li>✓ Unlimited email & phone support</li>
                         <li>✓ Monthly bookkeeping & reconciliation</li>
                         <li>✓ Invoice & expense tracking</li>
-                        <li>✓ Financial reports</li>
-                        <li>✓ Xero setup & management</li>
+                        <li>✓ Profitability reports per project</li>
+                        <li>✓ Subcontract documents management</li>
                     </ul>
                     <button class="pricing-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get Started</button>
                 </div>
-                <div class="pricing-card">
+                <div class="pricing-card featured">
+                    <div class="featured-badge">Most Popular</div>
                     <h3>Growing</h3>
                     <div class="price">$500<span>/month</span></div>
                     <p class="pricing-subtitle">50 - 100 transactions</p>
                     <ul class="pricing-features">
                         <li>✓ Unlimited email & phone support</li>
                         <li>✓ Weekly bookkeeping & reconciliation</li>
-                        <li>✓ Subcontractor management</li>
-                        <li>✓ Profitability analysis</li>
                         <li>✓ Invoice & expense tracking</li>
+                        <li>✓ Profitability reports per project</li>
+                        <li>✓ Subcontract documents management</li>
                     </ul>
                     <button class="pricing-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get Started</button>
                 </div>
-                <div class="pricing-card featured">
-                    <div class="featured-badge">Most Popular</div>
+            <div class="pricing-card">
                     <h3>Established</h3>
                     <div class="price">$1,000<span>/month</span></div>
                     <p class="pricing-subtitle">100 - 200 transactions</p>
                     <ul class="pricing-features">
                         <li>✓ Unlimited email & phone support</li>
                         <li>✓ Bi-weekly bookkeeping & reconciliation</li>
+                        <li>✓ Invoice & expense tracking</li>
+                        <li>✓ Profitability reports per project</li>
                         <li>✓ Complete subcontractor administration</li>
-                        <li>✓ Advanced profitability reporting</li>
                         <li>✓ Insurance deadline tracking</li>
                     </ul>
                     <button class="pricing-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get Started</button>
                 </div>
-                <div class="pricing-card">
+            <div class="pricing-card">
                     <h3>Enterprise</h3>
                     <div class="price">Custom<span>/month</span></div>
                     <p class="pricing-subtitle">200+ transactions</p>
                     <ul class="pricing-features">
                         <li>✓ Unlimited support & priority handling</li>
-                        <li>✓ Customized service package</li>
-                        <li>✓ Dedicated account manager</li>
-                        <li>✓ Advanced analytics & reporting</li>
-                        <li>✓ Tailored compliance solutions</li>
+                        <li>✓ Customised service package</li>
+                        <li>✓ Complete subcontractor administration</li>
+                        <li>✓ Advanced reporting as requested</li>
+                        <li>✓ Tailored compliance tracking</li>
                     </ul>
                     <button class="pricing-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact Us</button>
                 </div>
@@ -191,28 +208,10 @@
             <p style="text-align: center; color: white; margin-bottom: 2rem;">
                 Contact Us Now and let's discuss how TradieDesk can help your business grow.
             </p>
-            <form class="contact-form" onsubmit="handleSubmit(event)">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-button">Send Message</button>
-            </form>
-            <div id="form-message" class="form-message"></div>
-            <p style="text-align: center; color: #999; margin-top: 2rem; font-size: 0.9rem;">
-                Or email us directly at <a href="mailto:TradieDesk@outlook.com" style="color: white; text-decoration: underline;">TradieDesk@outlook.com</a>
+             <p style="text-align: center; color: #999; margin-top: 2rem; font-size: 0.9rem;">
+                <a href="tel:+61 450 294 468" style="color: white;">Phone: +61 450 294 468</a>
+            <p style="text-align: center; color: #999; margin-top: 0rem; font-size: 0.9rem;">
+                <a href="mailto:TradieDesk@outlook.com" style="color: white;">Email: TradieDesk@outlook.com</a>
             </p>
         </div>
     </section>
@@ -220,9 +219,10 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 TradieDesk. All rights reserved. | Professional Admin Support for Tradies</p>
+            <p>&copy; 2026 TradieDesk. All rights reserved. | Professional Bookkeeping And Admin Support for Tradies</p>
             <div class="footer-links">
                 <a href="pages/services.html">Services</a> | 
+                <a href="pages/pricing.html">Pricing</a> | 
                 <a href="pages/about.html">About</a> | 
                 <a href="pages/contact.html">Contact</a>
             </div>
